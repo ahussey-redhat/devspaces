@@ -9,7 +9,7 @@ projects:
       checkoutFrom:
         revision: develop
 components:
-  - name: python
+  - name: workspace-cli
     container:
       image: registry.redhat.io/devspaces/udi-rhel8:3.1
       volumeMounts:
@@ -24,7 +24,7 @@ commands:
   - id: run
     exec:
       label: "Run the application"
-      component: python
+      component: workspace-cli
       workingDir: ${PROJECTS_ROOT}/python-hello-world
       commandLine: python -m venv venv && source venv/bin/activate && python hello-world.py
       group:
