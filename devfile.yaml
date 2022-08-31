@@ -5,7 +5,7 @@ projects:
   - name: workspace
     git:
       remotes:
-        origin: https://github.com/ahussey-redhat/devspaces.git
+        origin: ssh://git@github.com:ahussey-redhat/devspaces.git
       checkoutFrom:
         revision: develop
 components:
